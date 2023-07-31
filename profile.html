@@ -1,0 +1,207 @@
+<html>
+    <head>
+    <title>Portfolio for Toss</title>
+    <html>
+        <head>
+        <title>Portfolio for Toss</title>
+    <style>
+        @font-face {
+        font-family: 'Spoqa Han Sans';
+        font-weight: 700;
+        src: local('Spoqa Han Sans Bold'),
+        url('fonts/SpoqaHanSansBold.woff2') format('woff2'),
+        url('fonts/SpoqaHanSansBold.woff') format('woff'),
+        url('fonts/SpoqaHanSansBold.ttf') format('truetype');
+        }
+        @font-face {
+        font-family: 'Spoqa Han Sans';
+        font-weight: 400;
+        src: local('Spoqa Han Sans Regular'),
+        url('fonts/SpoqaHanSansRegular.woff2') format('woff2'),
+        url('fonts/SpoqaHanSansRegular.woff') format('woff'),
+        url('fonts/SpoqaHanSansRegular.ttf') format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Spoqa Han Sans';
+        font-weight: 300;
+        src: local('Spoqa Han Sans Light'),
+        url('fonts/SpoqaHanSansLight.woff2') format('woff2'),
+        url('fonts/SpoqaHanSansLight.woff') format('woff'),
+        url('fonts/SpoqaHanSansLight.ttf') format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Spoqa Han Sans';
+        font-weight: 100;
+        src: local('Spoqa Han Sans Thin'),
+        url('fonts/SpoqaHanSansThin.woff2') format('woff2'),
+        url('fonts/SpoqaHanSansThin.woff') format('woff'),
+        url('fonts/SpoqaHanSansThin.ttf') format('truetype');
+    }
+    body{
+        background-color: #202632;
+        margin: 0;
+    }
+    
+    .border{
+     background-image: url(bg2.png);
+     background-size: cover;
+     width: calc(100% - 3vw);
+     height: calc(100% - 3vw);
+     border-radius: 2vw;
+     position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all ease 2s 0s;
+      overflow: hidden;
+    }
+    
+    .top{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 3vw;
+        margin-right: 3vw;
+        margin-top: 2.5vw;
+        margin-bottom: 2.5vw;
+    }
+    
+    h1{
+        font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+        font-weight: 700;
+        font-size: 3em;
+        color: #202632;
+        margin: 0;
+    }
+    
+    .x-container img{
+        transform: translate(0%, -50%);
+        top: 50%;
+        width: 90%;
+       position: relative;
+    }
+    
+    .row-container{
+        position: relative;
+        flex-grow: 1;
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        margin-left: 3vw;
+        margin-right: 3vw;
+        bottom: 0;
+        height: 85%;
+    }
+    
+    .row-container::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .row{
+        margin-bottom: 2.5vw;
+        opacity: 0.2;
+        transform: translateY(10%);
+        display: flex;
+        justify-content: space-between;
+        animation: load 1s ease;
+        animation-fill-mode: forwards;
+    }
+    
+    .thumbnail{
+        width: 32%;
+        aspect-ratio: 5 / 3;
+        border-radius: 1vw;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .thumbnailImg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    
+    .thumbnailImg img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    @keyframes load {
+      from {
+        opacity: 0.2;
+        transform: translateY(10%);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+    
+    #row1{
+        animation-delay: 0.1s;
+    }
+    #row2{
+        animation-delay: 0.2s;
+    }
+    #row3{
+        animation-delay: 0.3s;
+    }
+    
+    .mouseover{
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        opacity: 0;
+    }
+    
+    .mouseover:hover{
+        opacity: 1;
+        transition: all ease 1s 0s;
+    }
+    
+    .blue{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .blue img{
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+    }
+    
+    .workTitle{
+        color: white;
+        font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+        font-weight: 500;
+        font-size: 1.2em;
+        margin-top: 0;
+        margin-left: 1em;
+        margin-bottom: 1em;
+        bottom: 0;
+        position: absolute;
+        z-index: 5;
+    }
+
+</style>
+</head>
+<body>
+<div class="border">
+    <div class="top">
+    <h1>Profile</h1>
+    <div class="x-container">
+        <a href="index.html">
+            <img src="X_icon.svg">
+        </a>
+    </div>
+    </div>
+</div>
+</body>
+    </html>

@@ -1,0 +1,115 @@
+<html>
+    <head>
+    <title>Portfolio for Toss</title>
+<style>
+    @font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 700;
+    src: local('Spoqa Han Sans Bold'),
+    url('fonts/SpoqaHanSansBold.woff2') format('woff2'),
+    url('fonts/SpoqaHanSansBold.woff') format('woff'),
+    url('fonts/SpoqaHanSansBold.ttf') format('truetype');
+    }
+    @font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 400;
+    src: local('Spoqa Han Sans Regular'),
+    url('fonts/SpoqaHanSansRegular.woff2') format('woff2'),
+    url('fonts/SpoqaHanSansRegular.woff') format('woff'),
+    url('fonts/SpoqaHanSansRegular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 300;
+    src: local('Spoqa Han Sans Light'),
+    url('fonts/SpoqaHanSansLight.woff2') format('woff2'),
+    url('fonts/SpoqaHanSansLight.woff') format('woff'),
+    url('fonts/SpoqaHanSansLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 100;
+    src: local('Spoqa Han Sans Thin'),
+    url('fonts/SpoqaHanSansThin.woff2') format('woff2'),
+    url('fonts/SpoqaHanSansThin.woff') format('woff'),
+    url('fonts/SpoqaHanSansThin.ttf') format('truetype');
+}
+body{
+    background-color: #202632;
+    margin: 0;
+}
+
+.border{
+ background-color: black;
+ width: calc(100% - 3vw);
+ height: calc(100% - 3vw);
+ border-radius: 2vw;
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  transition: all ease 2s 0s;
+}
+.border img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.title{
+    position: absolute;
+    width: 35%;
+    top: 6vw;
+    left: 6vw;
+    transition: all ease 1s 0s;
+}
+.menu-container{
+    position: absolute;
+    bottom: 6vw;
+    right: 6vw;
+    transition: all ease 1s 0s;
+    z-index: 5;
+}
+
+.menu-container p{
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    font-weight: 700;
+    font-size: 3em;
+    color: #202632;
+    margin-bottom: 0;
+    margin-top: 0.5em;
+}
+
+.menu-container p:hover{
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    font-weight: 700;
+    font-size: 3em;
+    color: #202632;
+    margin-bottom: 0;
+    margin-top: 0.5em;
+    font-style: oblique;
+}
+a{
+   text-decoration: none;
+  color: inherit;
+}
+
+
+</style>
+</head>
+<body>
+<div class="border">
+<img src="bg1.png">
+</div>
+<div class="title">
+<img src="main_title3.svg">
+</div>
+<div class="menu-container">
+    <p><a href="profile.html">→ Profile</a></p>
+    <p><a href="works.html">→ Works</a></p>
+</div>
+
+</body>
+    </html>
